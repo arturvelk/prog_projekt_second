@@ -1,0 +1,8 @@
+streamlit
+pandas
+folium
+shapely
+streamlit_folium
+json5==0.9.4
+matplotlib
+s3fs
