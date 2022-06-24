@@ -183,17 +183,17 @@ dicts_year = {
         "Megye": [
             district_10,
             style_function_megye_10,
-            ["MSZP", "FIDESZ-KDNP", "SZDSZ", "MDF", "MIÉP-JOBBIK"],
+            ["LMP", "FIDESZ-KDNP", "MDF", "JOBBIK", "MSZP"],
         ],
         "Járás": [
             jaras_10,
             style_function_jaras_10,
-            ["MSZP", "FIDESZ-KDNP", "SZDSZ", "MDF", "MIÉP-JOBBIK"],
+            ["LMP", "FIDESZ-KDNP", "MDF", "JOBBIK", "MSZP"],
         ],
         "Pest": [
             pest_10,
             style_function_pest_10,
-            ["MSZP", "FIDESZ-KDNP", "SZDSZ", "MDF", "MIÉP-JOBBIK"],
+            ["LMP", "FIDESZ-KDNP", "MDF", "JOBBIK", "MSZP"],
         ]
     },
     "2014": {
