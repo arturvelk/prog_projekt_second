@@ -82,10 +82,10 @@ hu_shape_budapest = read_json("s3://election-sara-artur/hu_budapesz.geojson")
 data_kerulet = read_json("s3://election-sara-artur/val_90_kerület.json")
 
 
-st.write("Ide kell írni valami jó cuccost.")
+st.write("Térképünkön a listás választási adatok alakulását követhetik nyomon 1990 és 2018 között a megyék, járások és budapesti kerületek szintjén.")
 
 select_data = st.sidebar.selectbox(
-    "Közigazgatási szint:", ("Megyek", "Jarasok", "Budapest")
+    "Közigazgatási szint:", ("Vármegyék", "Járások", "Budapest")
 )
 
 select_year = st.sidebar.select_slider(
@@ -251,14 +251,14 @@ dicts_year = {
 }
 
 dicts = {
-    "Megyek": {
+    "Vármegyék": {
         "data": dicts_year[select_year]["Megye"][0],
         "style": dicts_year[select_year]["Megye"][1],
         "handler": ["NAME_1"] + dicts_year[select_year]["Megye"][2],
         "helyzet": [47, 20],
         "zoom": 7,
     },
-    "Jarasok": {
+    "Járások": {
         "data": dicts_year[select_year]["Járás"][0],
         "style": dicts_year[select_year]["Járás"][1],
         "handler": ["name"] + dicts_year[select_year]["Járás"][2],
