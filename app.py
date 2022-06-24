@@ -82,14 +82,14 @@ hu_shape_budapest = read_json("s3://election-sara-artur/hu_budapesz.geojson")
 data_kerulet = read_json("s3://election-sara-artur/val_90_kerület.json")
 
 
-st.write("My First Streamlit Web App, csicskavok, csicska")
+st.write("Ide kell írni valami jó cuccost.")
 
 select_data = st.sidebar.selectbox(
-    "What data do you want to see?", ("Megyek", "Jarasok", "Budapest")
+    "Közigazgatási szint:", ("Megyek", "Jarasok", "Budapest")
 )
 
 select_year = st.sidebar.select_slider(
-    "Melyik év legyen?",
+    "Választási év:",
     options=["1990", "1994", "1998", "2002", "2006", "2010", "2014", "2018"],
 )
 
