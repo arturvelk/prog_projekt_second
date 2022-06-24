@@ -394,7 +394,7 @@ def style_function_jaras_90(feature):
     """
 
     state = feature['properties']['name']
-    style = state_style_18(state,data_jaras_90,function=True)
+    style = state_style_90(state,data_jaras_90,function=True)
     
     return style
 
